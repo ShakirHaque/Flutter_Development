@@ -20,7 +20,13 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: new AppBar(
         title: new Text("Age Calculator"),
       ),
-      body: new Container(),
+      body: new Container(
+        child: new Column(
+          children: [
+            new OutlineButton(onPressed: onPressed, child: child)
+          ],
+        )
+      ),
     );
   }
 }
